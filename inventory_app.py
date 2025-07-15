@@ -6,7 +6,9 @@ from db import add_or_update_product
 def run():
     window = tk.Tk()
     window.title("Inventory Updater")
-
+    #another variable to track the window size
+    print("hello")
+    
     # UI Variables
     barcode_var = tk.StringVar()
     name_var = tk.StringVar()
@@ -34,6 +36,7 @@ def run():
         name_var.set("")
         price_var.set("")
         qty_var.set("")
+
 
     # Form UI
     tk.Label(window, text="Barcode:").pack()
